@@ -8,21 +8,25 @@ define slowdissolve = Dissolve(1.0)
 # define shockdissolve = Dissolve(0.5)
 
 # # The game starts here.
-image splash = "NeuroNinja.png"
+image splash = "NeuroWarriors.png"
 label splashscreen:
-    play music "load.mp3" fadeout 1
     
 
 
-    show splash with dissolve
-        # xalign 0.5
-        # yalign 0.5
+    show splash with dissolve:
+        xalign 0.5
+        yalign 0.5
+    with Pause(2.0)
+
+    play music "load.mp3" fadeout 1
+    
+    hide splash with dissolve
     with Pause(1.0)
 
-    scene black
-    with Pause(1.0)
+    # scene black
+    # with Pause(1.0)
 
-    show text "NeuroNinjas presents AquaGuardians" with dissolve
+    show text "NeuroWarriors presents AquaGuardians" with dissolve
     with Pause(2.0)
     
     hide text with dissolve

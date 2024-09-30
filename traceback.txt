@@ -1,71 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 97, in script
-    call screen choose_route
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/choose_route_screen.rpy", line 1, in execute
-    screen choose_route:
-  File "game/choose_route_screen.rpy", line 1, in execute
-    screen choose_route:
-  File "game/choose_route_screen.rpy", line 11, in execute
-    hbox:
-  File "game/choose_route_screen.rpy", line 28, in execute
-    imagebutton:
-Exception: Imagebutton does not have a idle image. (auto='choices/silver_%s.png').
+  File "game/blue_route.rpy", line 8, in script
+    jump choose_route
+ScriptError: could not find label 'choose_route'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 97, in script
-    call screen choose_route
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/ast.py", line 1974, in execute
-    self.call("execute")
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/ast.py", line 1953, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/exports/statementexports.py", line 345, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/display/core.py", line 2188, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/display/core.py", line 2705, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/display/screen.py", line 480, in visit_all
-    callback(self)
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/display/core.py", line 2705, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/display/screen.py", line 491, in per_interact
-    self.update()
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/display/screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/choose_route_screen.rpy", line 1, in execute
-    screen choose_route:
-  File "game/choose_route_screen.rpy", line 1, in execute
-    screen choose_route:
-  File "game/choose_route_screen.rpy", line 11, in execute
-    hbox:
-  File "game/choose_route_screen.rpy", line 28, in execute
-    imagebutton:
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/ui.py", line 975, in _imagebutton
-    idle = choice(idle, idle_image, "idle", required=True)
-  File "/home/sanu/Desktop/SIH/renpy-8.3.0-sdk/renpy/ui.py", line 969, in choice
-    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
-Exception: Imagebutton does not have a idle image. (auto='choices/silver_%s.png').
+  File "game/blue_route.rpy", line 8, in script
+    jump choose_route
+  File "/home/sanu/Desktop/SIH/renpy-8.3.2-sdk/renpy/ast.py", line 1699, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/home/sanu/Desktop/SIH/renpy-8.3.2-sdk/renpy/script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'choose_route'.
 
-Linux-6.8.0-44-generic-x86_64-with-glibc2.39 x86_64
-Ren'Py 8.3.0.24082114
+Linux-6.8.0-45-generic-x86_64-with-glibc2.39 x86_64
+Ren'Py 8.3.2.24090902
 AquaGuardians 1.0
-Mon Sep 16 10:10:35 2024
+Mon Sep 30 16:12:26 2024

@@ -86,5 +86,5 @@ label blue_start:
     with slowdissolve
 
     e "Let's begin the journey, the Aqua Guardian, an educational game on groundwater conservation and management"
-    return
+    call screen choose_route
  

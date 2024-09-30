@@ -2,11 +2,14 @@ screen choose_route:
     add "bg/bg_choose.png"
     # This button will delete any persistent variable
     button:
-        text "Reset": 
-            idle_color "#ff0000"
-            hover_color "#0000ff"
+        # text "Reset": 
+        text "Reset":
+            idle_color "#ffff00"
+            hover_color "#ff0000"
+            size 40
         action Function(renpy.game.persistent._clear)
-
+        xalign 1.0
+        # yalign 0.1
     # horizontal box containing the 5 image buttons
     hbox:
         xalign 0.5
