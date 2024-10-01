@@ -323,7 +323,7 @@ To keep your fork up-to-date with the original repository:
 2. **Open a New Issue:** If the feature is new, open an issue on the [Issues page](https://github.com/sk66641/AquaGuardians/issues).
 3. **Provide Details:** Clearly describe the enhancement and why it would be beneficial.
 
-Thank you for contributing to the Random Disco Light Simulator! Your efforts help make this project better for everyone. 🎉🚀
+Thank you for contributing to the AquaGuardians! Your efforts help make this project better for everyone. 🎉🚀
 
 For detailed instructions on how to contribute to this project, please refer to this [document](https://github.com/sk66641/AquaGuardians/blob/main/Learn.md) file.
 
