@@ -39,6 +39,7 @@
 - [Introduction📌](#introduction)
 - [Technology Used🚀](#technology-used)
 - [Featured in🏆](#featured-in)
+- [Overview⭐](#overview)
 - [Getting Started💥](#getting-started)
 - [Project Contributors🫂](#project-contributors)
 - [Contributing is fun🧡](#contributing-is-fun)
@@ -80,12 +81,11 @@
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-<!-- ## Overview⭐
+## Overview⭐
 
 ## Live Project -- [https://sk66641.itch.io/aquaguardians/](https://sk66641.itch.io/aquaguardians/)
-**Click on "Randomize" button to fill the required fields randomly and then press "submit".**
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <!-- ## Checkout Features✨
 
