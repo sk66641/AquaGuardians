@@ -60,7 +60,7 @@ define default_voice_volume = 1.0
 # Mute state variable
 define is_muted = False
 
-# options.rpy or audio.rpy
+
 
 init python:
     def mute_all():
