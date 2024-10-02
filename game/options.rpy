@@ -51,12 +51,35 @@ define config.has_music = True
 define config.has_voice = True
 
 
+
+# Default volume settings
+define default_sound_volume = 1.0  # 100% volume
+define default_music_volume = 1.0
+define default_voice_volume = 1.0
+
+# Mute state variable
+define is_muted = False
+
+
+
+init python:
+    def mute_all():
+        renpy.music.set_volume(0.0, channel='music')  # Mute music
+        renpy.sound.set_volume(0.0, channel='sound')  # Mute sound effects
+        renpy.sound.set_volume(0.0, channel='voice')  # Mute voice
+        Preference("all mute", True)  # Update preference
+
+    def unmute_all():
+        renpy.music.set_volume(default_music_volume, channel='music')
+        renpy.sound.set_volume(default_sound_volume, channel='sound')
+        renpy.sound.set_volume(default_voice_volume, channel='voice')
+        Preference("all mute", False)  # Update preference
+
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
 # define config.sample_sound = "sample-sound.ogg"
 # define config.sample_voice = "sample-voice.ogg"
-
 
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the
