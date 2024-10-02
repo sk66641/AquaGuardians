@@ -804,9 +804,11 @@ screen preferences():
                         null height gui.pref_spacing
 
                         textbutton _("Mute All"):
-                            action Preference("all mute", "toggle")
+                            action [
+                                If(is_muted, Function(unmute_all), Function(mute_all)),  # Toggle between mute and unmute
+                                SetVariable("is_muted", not is_muted)  # Toggle the mute state
+                            ]
                             style "mute_all_button"
-
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text
