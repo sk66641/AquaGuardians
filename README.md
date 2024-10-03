@@ -33,6 +33,8 @@
 - [Overview⭐](#overview)
 - [Getting Started💥](#getting-started)
 - [Project Contributors🫂](#project-contributors)
+- [Contribution Guidelines👇](#contribution-guidelines)
+- [Code of conduct💻](#code-of-conduct)
 - [Contributing is fun🧡](#contributing-is-fun)
 <br>
 
@@ -204,6 +206,22 @@ Thank you for contributing to the AquaGuardians! Your efforts help make this pro
 </table>
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+## Contribution Guidelines👇
+To maintain quality and consistency, please adhere to the following guidelines:
+
+1. Code Style: Follow the coding style used throughout the project. Clean, readable code with comments is always appreciated.
+2. Commits: Write meaningful commit messages.
+3. Pull Requests: Make sure PRs are focused, well-explained, and reference any issues they address.
+4. Testing: Ensure that your changes are well-tested locally and don’t break existing functionality.
+
+## Code of conduct💻
+1. Be respectful: Be open-minded and welcoming to new users and collaborators. Respect differing opinions and experiences.
+2. Be constructive: Contribute positively to discussions by improving them in some way.
+3. Be trustworthy: Be honest and don't intentionally mislead others.
+4. Be empathetic: Demonstrate kindness and empathy toward others.
+5. Be responsible: Accept responsibility for mistakes and apologize to those affected.
+6. Avoid harassment: Don't use sexualized language or imagery, make personal attacks, or publish others' private information. 
 
 ## Contributing is fun🧡
 
