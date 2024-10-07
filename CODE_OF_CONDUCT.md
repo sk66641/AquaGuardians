@@ -2,7 +2,7 @@
 
 ## Introduction
 
-AquaGuardians is an comprehensive platform that connects students, educators, and professionals to resources such as scholarships, job opportunities, and community discussions. By participating in this community, you agree to contribute positively and respectfully, fostering an environment that promotes inclusivity, learning, and collaboration.
+AquaGuardians is an interactive educational game that teaches players the importance of sustainable groundwater management through interactive puzzles
 
 ## Our Commitment
 
