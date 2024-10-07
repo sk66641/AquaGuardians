@@ -84,7 +84,7 @@ label blue_start:
 
     e "... I also believe in the power of education, so I make it my mission to teach others how we can manage water better and preserve this precious resource for future generations."
 
-    # This ends the game.
+    # This ends the game
  
     # set red to true to indicate red's ending was completed.
     $ persistent.red = True
