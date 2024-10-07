@@ -11,18 +11,18 @@ label blue_start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room.png 
+    scene bg room
     with slowdissolve
     play music "Benson Boone.mp3" fadeout 1
      
     # scene bg cave
-    scene bg cave.png 
+    scene bg cave 
     with slowdissolve
     
      # scene bg room
     # with slowdissolve
 
-    scene bg room.png 
+    scene bg room
     with slowdissolve
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -49,7 +49,7 @@ label blue_start:
     e "A young, passionate environmental scientist."
     # scene bg room
     # with slowdissolve
-    scene bg room.png 
+    scene bg room
     with slowdissolve
     
 
