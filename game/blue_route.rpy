@@ -4,18 +4,26 @@ define e = Character("Kavya")
 define slowdissolve = Dissolve(1.0)
 define shockdissolve = Dissolve(0.5)
 # image looping_animation = Animation("kavya unhappy.png", 0.1, "eileen shock.png", 0.1)
+image looping_animation = Animation("kavya unhappy.png", 0.1, "eileen shock.png", 0.1)
 label blue_start:
     # label start:
-
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
+
+    scene bg room
+    with slowdissolve
     play music "Benson Boone.mp3" fadeout 1
-
+     
     # scene bg cave
-
-    # scene bg room
+    scene bg cave 
+    with slowdissolve
+    
+     # scene bg room
     # with slowdissolve
+
+    scene bg room
+    with slowdissolve
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -34,11 +42,16 @@ label blue_start:
 # These display lines of dialogue.
 
     # voice "rebecca/train.mp3"
+    voice "rebecca/train.mp3"
     e "Hi! I am Kavya."
     # voice "rebecca/young.mp3"
+    voice "rebecca/train.mp3"
     e "A young, passionate environmental scientist."
     # scene bg room
     # with slowdissolve
+    scene bg room
+    with slowdissolve
+    
 
     scene intro1 
     with slowdissolve
@@ -71,18 +84,21 @@ label blue_start:
 
     e "... I also believe in the power of education, so I make it my mission to teach others how we can manage water better and preserve this precious resource for future generations."
 
-    # This ends the game.
+    # This ends the game
  
     # set red to true to indicate red's ending was completed.
-    $ persistent.blue = True
+    $ persistent.red = True
 
     # hide bg room
+    hide bg room
     show black
     with slowdissolve
     
     show aqua:
         xalign 0.5
         yalign 0.3
+        xalign 0.5
+        zoom 1.2
     with slowdissolve
 
     e "Let's begin the journey, the Aqua Guardian, an educational game on groundwater conservation and management"
