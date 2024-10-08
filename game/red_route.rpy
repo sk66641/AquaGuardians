@@ -13,7 +13,8 @@ label red_start:
     play music "nature.mp3" fadeout 1
 
     # scene bg cave
-
+    scene bg cave
+    
     scene start
     with slowdissolve
 
@@ -48,6 +49,8 @@ is most appropriate. Can you suggest one for him?"
 
     # show first
     # with slowdissolve
+    show first
+    with slowdissolve
 
 
     show kavya serious:
@@ -73,6 +76,7 @@ label question1:
 
         $ menu_flag = True
         # hide kavya serious
+        hide kavya serious
         show eileen shock transp:
             xalign -0.3
             yalign 1.0
@@ -82,12 +86,20 @@ label question1:
         # hide elieen shock transp
         # hide eileen shock transp
         # with slowdissolve
+        hide eileen shock transp
+        hide eileen shock transp
+        with slowdissolve
+
 
         # show eileen happy:
         #     xalign -0.3
         #     yalign 1.0
         # with slowdissolve
-
+         show eileen happy:
+            xalign -0.3
+            yalign 1.0
+        with slowdissolve
+        
         jump choice1_done
 
     label wrong1:
@@ -111,6 +123,13 @@ label question1:
         #     xalign -0.3
         #     yalign 1.0
         # with slowdissolve
+        hide kavya shock transp
+        show kavya happy:
+            xalign -0.3
+            yalign 1.0
+        with slowdissolve
+
+        
 
         scene beforesecond
         with slowdissolve
@@ -153,6 +172,13 @@ label question2:
         #     xalign -0.3
         #     yalign 1.0
         # with slowdissolve
+         show eileen happy:
+            xalign -0.3
+            yalign 1.0
+        with slowdissolve
+        
+        jump choice3_done
+
         jump choice2_done
 
     label wrong2:
@@ -214,6 +240,10 @@ label question3:
         #     xalign -0.3
         #     yalign 1.0
         # with slowdissolve
+        show eileen happy:
+            xalign -0.3
+            yalign 1.0
+        with slowdissolve
         jump choice3_done
 
     label wrong3:
@@ -275,6 +305,10 @@ label question4:
         #     xalign -0.3
         #     yalign 1.0
         # with slowdissolve
+        show eileen happy:
+            xalign -0.3
+            yalign 1.0
+        with slowdissolve
         jump choice4_done
 
     label wrong4:
@@ -339,6 +373,11 @@ label question5:
         #     xalign -0.3
         #     yalign 1.0
         # with slowdissolve
+        show eileen happy:
+            xalign -0.3
+            yalign 1.0
+        with slowdissolve
+    
         jump choice5_done
 
     label wrong5:
@@ -368,7 +407,7 @@ label question5:
 
     # ... the game continues here.
     # set blue to true to indicate blue's ending was completed.
-    $ persistent.red = True
+    $ persistent.blue = True
     "Let's move to the next level."
     return
  
